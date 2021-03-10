@@ -1,0 +1,9 @@
+1) Quelle est la différence entre le mode connecté et déconnecté.
+- mode connecte : il faut se connecter a la base de donne pour manipuler les donne et les affiche
+- mode deconnecte : on pas besoin d'etre connecte a la base de donne, parce que on utilise le dataset au niveau mimoire 
+
+2) Quelle est la différence entre les méthodes : ExecuteReader, ExecuteNonQuery et
+ExecuteScalar.
+- ExecuteReader : elle retourne un object de type SQLDataReader qui peut contient un tableaux (on l'utilise pour "select")
+- ExecuteNonQuery : on l'utilise si on on vous supprimer ou ajouter ou moudifier sur la base de donne et il retourn le nombre des ligne effectue
+- ExecuteScalar : elle retourne un seul value de premiere collonne et premier 
