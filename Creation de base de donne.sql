@@ -43,3 +43,8 @@ begin
 	on lmo.idOperation=o.idOperation
 	where dateOperation=@date and idSpecialite=@idSpecialite
 end
+
+
+
+select * from ligneMedecinOperation
+insert into ligneMedecinOperation values(1,1,getDate(),11,10000000)

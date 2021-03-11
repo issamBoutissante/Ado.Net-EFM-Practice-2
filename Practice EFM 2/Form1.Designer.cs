@@ -33,6 +33,8 @@ namespace Practice_EFM_2
             this.medecinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ligneOperationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ligneOperationEtatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.operationParMedecinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,7 +43,9 @@ namespace Practice_EFM_2
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.medecinToolStripMenuItem,
             this.textToolStripMenuItem,
-            this.ligneOperationToolStripMenuItem});
+            this.ligneOperationToolStripMenuItem,
+            this.ligneOperationEtatToolStripMenuItem,
+            this.operationParMedecinToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -69,6 +73,20 @@ namespace Practice_EFM_2
             this.ligneOperationToolStripMenuItem.Text = "ligne Operation";
             this.ligneOperationToolStripMenuItem.Click += new System.EventHandler(this.ligneOperationToolStripMenuItem_Click);
             // 
+            // ligneOperationEtatToolStripMenuItem
+            // 
+            this.ligneOperationEtatToolStripMenuItem.Name = "ligneOperationEtatToolStripMenuItem";
+            this.ligneOperationEtatToolStripMenuItem.Size = new System.Drawing.Size(124, 20);
+            this.ligneOperationEtatToolStripMenuItem.Text = "ligne Operation Etat";
+            this.ligneOperationEtatToolStripMenuItem.Click += new System.EventHandler(this.ligneOperationEtatToolStripMenuItem_Click);
+            // 
+            // operationParMedecinToolStripMenuItem
+            // 
+            this.operationParMedecinToolStripMenuItem.Name = "operationParMedecinToolStripMenuItem";
+            this.operationParMedecinToolStripMenuItem.Size = new System.Drawing.Size(141, 20);
+            this.operationParMedecinToolStripMenuItem.Text = "Operation Par Medecin";
+            this.operationParMedecinToolStripMenuItem.Click += new System.EventHandler(this.operationParMedecinToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -92,6 +110,8 @@ namespace Practice_EFM_2
         private System.Windows.Forms.ToolStripMenuItem medecinToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem textToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ligneOperationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ligneOperationEtatToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem operationParMedecinToolStripMenuItem;
     }
 }
 

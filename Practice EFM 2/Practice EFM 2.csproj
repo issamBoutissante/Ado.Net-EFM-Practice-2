@@ -33,9 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +60,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gestion_Etat_Medecin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion_Etat_Medecin.Designer.cs">
+      <DependentUpon>Gestion_Etat_Medecin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gestion_Medecin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +78,12 @@
     <Compile Include="Gestion_Operation.Designer.cs">
       <DependentUpon>Gestion_Operation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Getion_Etats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Getion_Etats.Designer.cs">
+      <DependentUpon>Getion_Etats.cs</DependentUpon>
+    </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="HopitalDataSet.cs">
       <DependentUpon>HopitalDataSet.xsd</DependentUpon>
@@ -73,6 +92,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>HopitalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OperationEffectueCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OperationEffectueCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OperationEffectueParMedecinCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OperationEffectueParMedecinCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -85,11 +116,25 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gestion_Etat_Medecin.resx">
+      <DependentUpon>Gestion_Etat_Medecin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gestion_Medecin.resx">
       <DependentUpon>Gestion_Medecin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gestion_Operation.resx">
       <DependentUpon>Gestion_Operation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Getion_Etats.resx">
+      <DependentUpon>Getion_Etats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OperationEffectueCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OperationEffectueCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OperationEffectueParMedecinCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OperationEffectueParMedecinCrystalReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -126,6 +171,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

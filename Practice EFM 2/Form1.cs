@@ -33,5 +33,15 @@ namespace Practice_EFM_2
         {
             ouvreForm(new Gestion_Operation());
         }
+
+        private void ligneOperationEtatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ouvreForm(new Getion_Etats());
+        }
+
+        private void operationParMedecinToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ouvreForm(new Gestion_Etat_Medecin());
+        }
     }
 }
