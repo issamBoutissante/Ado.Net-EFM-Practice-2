@@ -32,6 +32,7 @@ namespace Practice_EFM_2
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.medecinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ligneOperationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -39,7 +40,8 @@ namespace Practice_EFM_2
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.medecinToolStripMenuItem,
-            this.textToolStripMenuItem});
+            this.textToolStripMenuItem,
+            this.ligneOperationToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -59,6 +61,13 @@ namespace Practice_EFM_2
             this.textToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
             this.textToolStripMenuItem.Text = "Recherche Medecin";
             this.textToolStripMenuItem.Click += new System.EventHandler(this.textToolStripMenuItem_Click);
+            // 
+            // ligneOperationToolStripMenuItem
+            // 
+            this.ligneOperationToolStripMenuItem.Name = "ligneOperationToolStripMenuItem";
+            this.ligneOperationToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
+            this.ligneOperationToolStripMenuItem.Text = "ligne Operation";
+            this.ligneOperationToolStripMenuItem.Click += new System.EventHandler(this.ligneOperationToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -82,6 +91,7 @@ namespace Practice_EFM_2
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem medecinToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem textToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ligneOperationToolStripMenuItem;
     }
 }
 

@@ -10,3 +10,4 @@ C:\Users\bouti\OneDrive\سطح المكتب\desktop dev client serveur\EFM\Pract
 C:\Users\bouti\OneDrive\سطح المكتب\desktop dev client serveur\EFM\Practice EFM 2\Practice EFM 2\obj\Debug\Practice EFM 2.exe
 C:\Users\bouti\OneDrive\سطح المكتب\desktop dev client serveur\EFM\Practice EFM 2\Practice EFM 2\obj\Debug\Practice EFM 2.pdb
 C:\Users\bouti\OneDrive\سطح المكتب\desktop dev client serveur\EFM\Practice EFM 2\Practice EFM 2\obj\Debug\Practice_EFM_2.Recherche_Medecin.resources
+C:\Users\bouti\OneDrive\سطح المكتب\desktop dev client serveur\EFM\Practice EFM 2\Practice EFM 2\obj\Debug\Practice_EFM_2.Gestion_Operation.resources

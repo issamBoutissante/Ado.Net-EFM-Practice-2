@@ -19,7 +19,6 @@ namespace Practice_EFM_2
 
         private void Recherche_Medecin_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'hopitalDataSet.medecinRecherche' table. You can move, or remove it, as needed.
             this.medecinRechercheTableAdapter.Fill(this.hopitalDataSet.medecinRecherche);
         }
 

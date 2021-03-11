@@ -9,6 +9,7 @@ namespace Practice_EFM_2
         {
             InitializeComponent();
             this.CenterToScreen();
+            ouvreForm(new Gestion_Medecin());
         }
 
         private void medecinToolStripMenuItem_Click(object sender, EventArgs e)
@@ -26,6 +27,11 @@ namespace Practice_EFM_2
         private void textToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ouvreForm(new Recherche_Medecin());
+        }
+
+        private void ligneOperationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ouvreForm(new Gestion_Operation());
         }
     }
 }
